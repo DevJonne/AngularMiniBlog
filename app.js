@@ -1,6 +1,6 @@
 angular.module('blog', [])
 .controller('Rest', function ($scope, $http){
-  $http.get('http://localhost:8080/postagens/')
+  $http.get('https://api-fake-blog.onrender.com/postagens/')
     .then(function(response) {
       $scope.publicacoes = response.data;
       $scope.index = function(index) {
@@ -13,7 +13,7 @@ angular.module('blog', [])
 
 angular.module('blogMax', [])
 .controller('RestMax', function ($scope, $http){
-  $http.get('http://localhost:8080/postagens/')
+  $http.get('https://api-fake-blog.onrender.com/postagens/')
     .then(function(response) {
       const index = localStorage.getItem("index");
       $scope.publicacoes = response.data[index];
