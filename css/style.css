@@ -1,0 +1,144 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#main-header {
+    background-color: #242424;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 4vh;
+}
+
+#main-header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-header .logo a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#main-header .logo a:hover {
+    color: #00bcd4;
+}
+
+#main-header .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#main-header .nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#main-header .nav ul li a:hover {
+    color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+    #main-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #main-header .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+.titulo-site {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Container que alinha os cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Define o tamanho e organização dos cards */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+.card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+#cardpost h2{
+    font-size: 30px;
+}
+#cardpost p {
+    font-size: 20px;
+}
+.imgpost {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 50px 0px 50px 0px;
+    align-self: center;
+}}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 4vh;
+    margin-bottom: 15px;
+    border-radius: 30%;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+/* Ajusta o botão "Ler Mais" */
+.btn-read {
+    margin-top: 10px;
+}
